@@ -13,3 +13,8 @@ class YandexSearcher(Browser):
         search_button = self.driver.find_element(Locators.search_button[0], Locators.search_button[1])
         search_button.click()
         return search_button
+
+    def click_on_cancel_input_button(self):
+        cancel_input_button = self.driver.find_element(Locators.cancel_input_button[0], Locators.cancel_input_button[1])
+        cancel_input_button.click()
+        return cancel_input_button
