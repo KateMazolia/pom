@@ -19,7 +19,7 @@ class Browser:
 #  для пайтеста:
 # @pytest.fixture(scope="session") #важно указать сессию, чтобы оно один раз запускалось, а не много
 # def browser():
-#     driver = webdriver.Chrome(executable_path=r"C:\Users\79521\PycharmProjects\pyProject-selenium\POM-lessons-autotesting\chromedriver.exe")
+#     driver = webdriver.Chrome(executable_path=r"C:\Users\79521\PycharmProjects\pyProject-selenium\POM\chromedriver.exe")
 #     yield driver
 #     driver.quit() #выйдется из драйвера в конце сессии
 #
