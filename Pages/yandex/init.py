@@ -18,3 +18,7 @@ class YandexSearcher(BasePage):
         cancel_input_button = self.driver.find_element(Locators.cancel_input_button[0], Locators.cancel_input_button[1])
         cancel_input_button.click()
         return cancel_input_button
+
+    def find_element_in_nav_bar(self):
+        list_of_elements = self.driver.find_elements(Locators.nav_bar_element[0], Locators.nav_bar_element[1])
+        return list_of_elements
