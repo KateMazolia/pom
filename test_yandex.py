@@ -13,12 +13,12 @@ def browser(yandex_page):
     yield
     yandex_page.close_browser()
 
-def test_enter_and_clear_the_search_field():
+def test_enter_and_clear_the_search_field(yandex_page, browser):
     yandex_page.enter_word("кот")
     yandex_page.click_on_the_search_button()
     time.sleep(3)
 
-def test_search():
+def test_search(yandex_page, browser):
     yandex_page.enter_word("корова")
     time.sleep(2)
     yandex_page.click_on_cancel_input_button()
@@ -26,6 +26,19 @@ def test_search():
     time.sleep(1)
     yandex_page.click_on_the_search_button()
     time.sleep(2)
+
+
+
+def test_check_finding_elems_in_nav_bar(yandex_page, browser):
+    yandex_page.enter_word("кот")
+    yandex_page.click_on_the_search_button()
+    time.sleep(2)
+    elements = yandex_page.find_element_in_nav_bar()
+    for elem in elements:
+        elem.click()
+        time.sleep(2)
+        #здесь надо прописать, чтобы браузер возвращался назад, чтобы второй элемент так же кликнулся
+
 
 
 
