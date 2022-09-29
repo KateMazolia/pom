@@ -1,7 +1,7 @@
 from  selenium import webdriver
 # здесь указывается каким браузером будут открываться тесты
 
-class Browser:
+class BasePage:
     def __init__(self, base_url="https://ya.ru"):
         self.driver = webdriver.Chrome()
         self.base_url = base_url
