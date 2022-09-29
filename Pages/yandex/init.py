@@ -1,8 +1,8 @@
-from POM.browser import Browser
+from POM.basePage import BasePage
 from POM.Pages.yandex.Locators import Locators
 
 
-class YandexSearcher(Browser):
+class YandexSearcher(BasePage):
     def enter_word(self, word):
         search_field = self.driver.find_element(Locators.search_field[0], Locators.search_field[1])
         search_field.click()
