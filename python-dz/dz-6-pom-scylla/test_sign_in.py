@@ -6,6 +6,8 @@ import time
 import pytest
 from selenium import webdriver
 
+# Задание: Реализовать sanity test для страницы signIn
+
 
 @pytest.fixture()
 def browser():
