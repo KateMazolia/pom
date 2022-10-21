@@ -1,0 +1,20 @@
+<department>
+    <person>
+        <name>Ivan</name>
+        <last_name>Ivanov</last_name>
+        <birthday_date>20-05-1953</birthday_date>
+        <phone>
+            <phone_code>933</phone_code>
+            <phone_number>5550000</phone_number>
+        </phone>
+    </person>
+    <person>
+        <name>Petr</name>
+        <last_name>Petrov</last_name>
+        <birthday_date>01-12-1995</birthday_date>
+        <phone>
+            <phone_code>977</phone_code>
+            <phone_number>1112222</phone_number>
+        </phone>
+    </person>
+</department>
