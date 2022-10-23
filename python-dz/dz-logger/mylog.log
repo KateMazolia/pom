@@ -1,0 +1,4 @@
+16:26:18 - dz_func - DEBUG - <module>: 19 - logger with name: Mult_log created
+16:26:18 - dz_func - DEBUG - main: 29 - Enter in the main() function: name=multiply
+16:26:18 - dz_func - DEBUG - multiply: 23 - received params 9, 3
+16:26:18 - dz_func - DEBUG - multiply: 25 - received number 27
